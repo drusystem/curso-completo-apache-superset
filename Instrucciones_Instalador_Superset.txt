@@ -1,15 +1,18 @@
 *Apuntes para instalar localmente superset*
 
 Paso 1: Instalar Python (Probado correctamente en Python 3.9)
+	py -3.9 --version
 
 Paso 2: Instalar biblioteca para la creación de entornos virtuales
 	pip install virtualenv
 
 Paso 3: Crear un entorno virtual
-	virtualenv venv
+	Usando version especifica de python en mi PC
+	C:\Users\Usuario\AppData\Local\Programs\Python\Python39\python.exe -m venv venv_39
+	--virtualenv venv
 
 Paso 4: Activar el entorno virtual
-	venv\Scripts\activate
+	venv_39\Scripts\activate
 
 Paso 5: Instalar Microsoft Visual C++ 14.0
 	https://visualstudio.microsoft.com/es/visual-cpp-build-tools/
