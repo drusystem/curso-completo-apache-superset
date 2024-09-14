@@ -7,7 +7,7 @@ import pandas as pd
 
 #Datos de conexión
 user = 'postgres'
-password = 'password'
+password = 'root'
 host = 'localhost'
 database = 'censo2011'
 

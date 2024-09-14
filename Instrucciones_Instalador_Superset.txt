@@ -1,5 +1,8 @@
 *Apuntes para instalar localmente superset*
 
+Paso 0: Tutorial
+	https://www.youtube.com/watch?v=5GvN-UNp4o8
+
 Paso 1: Instalar Python (Probado correctamente en Python 3.9)
 	py -3.9 --version
 
@@ -27,7 +30,9 @@ Paso 7: Verificar que superset quedó instalado
 Paso 8: Crear archivo de configuración de superser "superset_config.py" en la carpeta raíz del proyecto
 
 Paso 9: Definir variable de entorno
-	$env:SUPERSET_CONFIG_PATH="C:\Users\NebyX\Documents\Data Analytics\Censo 2011\superset_config.py"
+	Esto depende de donde esta ubicado el archivo en tu pc
+	ejecutar en CMD
+	set SUPERSET_CONFIG_PATH=C:\Users\Usuario\Desktop\SUPERSET\curso-completo-apache-superset\superset_config.py
 
 Paso 10: Actualizar la base de datos
 	superset db upgrade
@@ -45,6 +50,6 @@ Paso 14: Acceder a la interfaz gráfica de superset en el navegador de nuestra p
 	http://localhost:8088
 
 Paso 15: Cuando ejecutemos por segunda vez Superset, debemos volver a configurar el entorno con esto:
-	$env:FLASK_APP="superset"
+	set FLASK_APP=superset
 
 Paso 16: Volver a ejecutar el paso 13 y 14 luego de la primera vez
